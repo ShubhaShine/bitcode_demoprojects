@@ -1,0 +1,56 @@
+<!-- <h1 class="bg-danger">Hello Directive</h1> -->
+<!-- <ul>
+  <li *ngFor="let c of colors">
+    {{c}}
+  </li>
+</ul>
+<ul *ngFor="let person of people; let i=index">
+  <li *ngIf="person.age<30">
+    {{i+1}}---{{person.name}}---{{person.age}}---{{person.country}}
+  </li>
+</ul> -->
+
+<!-- <ul *ngFor="let person of people; let i=index" [ngSwitch]="person.country">
+  <li *ngSwitchCase="'UK'" class="text-success">
+    {{person.name}}---{{person.country}}
+  </li>
+  <li *ngSwitchCase="'Austrelia'" class="text-warning">
+    {{person.name}}---{{person.country}}
+  </li>
+  <li *ngSwitchCase="'Dubai'" class="text-primary">
+    {{person.name}}---{{person.country}}
+  </li>
+  <li *ngSwitchCase="'Israel'" class="text-danger">
+    {{person.name}}---{{person.country}}
+  </li>
+</ul> -->
+
+<!-- using attribute -->
+<!-- <ul>
+  <li *ngFor="let c of colors" [ngStyle]="{color:c}">
+    {{c}}
+  </li>
+</ul> -->
+
+<!-- <ul *ngFor="let person of people">
+  <li [ngStyle]="{color:getColor(person.country)}">
+    {{person.name}}---{{person.country}}
+  </li>
+</ul> -->
+<!-- 
+<h4>NgClass</h4>
+<ul *ngFor="let person of people">
+  <li [ngClass]="{
+   'text-success':person.country === 'UK', 
+   'text-danger':person.country === 'Dubai', 
+   'text-primary':person.country === 'India', 
+   'text-warning':person.country === 'Israel' 
+  }">
+    {{person.name}}---{{person.country}}
+  </li>
+</ul> -->
+
+<h1 appBasicHighlight>this is customized directive</h1>
+<div appBetterhighlight>
+  <label>Hello Shubham</label>
+</div>
